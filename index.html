@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dosier Ejecutivo: Soberanía y Evolución Tecnológica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        :root {
+            --brand-cyan: #00e5ff;
+            --brand-dark-bg: #030712;
+            --brand-surface: #0f172a;
+            --brand-border: #1e293b;
+        }
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: var(--brand-dark-bg);
+            color: #f1f5f9;
+            scroll-behavior: smooth;
+        }
+        .hero-gradient {
+            background: radial-gradient(circle at 70% 30%, rgba(0, 229, 255, 0.08) 0%, transparent 60%);
+        }
+        .glass-panel {
+            background: rgba(15, 23, 42, 0.6);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--brand-border);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #fff 30%, var(--brand-cyan) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .code-snippet {
+            font-family: 'JetBrains Mono', monospace;
+            background: #000;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: var(--brand-cyan);
+            font-size: 0.9em;
+        }
+        .stat-card {
+            border-left: 2px solid var(--brand-border);
+            transition: all 0.3s ease;
+        }
+        .stat-card:hover {
+            border-left-color: var(--brand-cyan);
+            background: rgba(0, 229, 255, 0.03);
+        }
+        .step-number {
+            background: linear-gradient(135deg, var(--brand-cyan), #00b8d4);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .roadmap-dot {
+            width: 12px;
+            height: 12px;
+            background: var(--brand-cyan);
+            border-radius: 50%;
+            position: relative;
+            z-index: 10;
+        }
+    </style>
+</head>
+<body class="antialiased selection:bg-cyan-500/30">
+
+    <!-- Navegación Minimalista -->
+    <nav class="fixed top-0 w-full z-50 border-b border-white/5 glass-panel px-6 py-4">
+        <div class="max-w-7xl mx-auto flex justify-between integrity-center">
+            <div class="flex items-center gap-3">
+				<div class="w-10 h-10 rounded-xl bg-gradient-to-br from-cyan-400 to-cyan-600 flex items-center justify-center shadow-lg shadow-cyan-500/30">
+					<span class="text-black font-extrabold text-sm">MITD</span>
+				</div>
+
+				<span class="font-bold text-white tracking-tight">
+					<span class="text-cyan-400">Software</span>
+				</span>
+			</div>
+			<div class="flex items-center gap-2">
+                <span class="font-bold tracking-tight">DOSIER EJECUTIVO 2026</span>
+            </div>
+            <div class="hidden md:flex gap-8 text-sm font-medium text-gray-400">
+                <a href="#contexto" class="hover:text-cyan-400 transition-colors">Contexto</a>
+                <a href="#metodologia" class="hover:text-cyan-400 transition-colors">M.I.T.D.</a>
+                <a href="#caso-testigo" class="hover:text-cyan-400 transition-colors">Caso Testigo</a>
+                <a href="#escalabilidad" class="hover:text-cyan-400 transition-colors">Hoja de Ruta</a>
+                <a href="#resultados" class="hover:text-cyan-400 transition-colors">Resultados</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Principal -->
+    <header class="relative pt-40 pb-24 px-6 hero-gradient">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 text-xs font-bold mb-6">
+                    <span class="relative flex h-2 w-2">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-cyan-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-2 w-2 bg-cyan-500"></span>
+                    </span>
+                    ESTRATEGIA DE MODERNIZACIÓN CRÍTICA
+                </div>
+                <h1 class="text-6xl md:text-8xl font-extrabold mb-8 leading-[1.1]">
+                    Recuperar la <br>
+                    <span class="gradient-text">Gobernanza</span>
+                </h1>
+                <p class="text-xl text-gray-400 leading-relaxed mb-10 max-w-xl">
+                    Marco estratégico para la transformación de sistemas de gran escala mediante el Modelo de Inferencia y Trazabilidad Determinística (M.I.T.D.).
+                </p>
+                <div class="flex gap-4">
+                    <a href="#metodologia" class="bg-cyan-500 hover:bg-cyan-400 text-black font-bold px-8 py-4 rounded-xl transition-all shadow-lg shadow-cyan-500/20">
+                        Ver Framework M.I.T.D.
+                    </a>
+                </div>
+            </div>
+            <div class="hidden lg:block">
+                <div class="glass-panel p-8 rounded-3xl border-white/5 shadow-2xl">
+                    <div class="flex justify-between items-center mb-6">
+                        <span class="text-xs font-mono text-cyan-500">SYSTEM_HEALTH_INDEX</span>
+                        <span class="text-xs text-gray-500">v4.0.2</span>
+                    </div>
+                    <div class="space-y-4">
+                        <div class="h-2 w-full bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-cyan-500 w-[85%]"></div>
+                        </div>
+                        <div class="flex justify-between text-xs">
+                            <span class="text-gray-400">Capacidad de Documentación</span>
+                            <span class="text-cyan-400">85% Incremento</span>
+                        </div>
+                        <div class="h-2 w-full bg-white/5 rounded-full overflow-hidden">
+                            <div class="h-full bg-cyan-500 w-[50%]"></div>
+                        </div>
+                        <div class="flex justify-between text-xs">
+                            <span class="text-gray-400">Reducción de Deuda Técnica</span>
+                            <span class="text-cyan-400">50% Objetivo</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-6">
+        
+        <!-- SECCIÓN 1: CONTEXTO -->
+        <section id="contexto" class="py-24 border-t border-white/5">
+            <div class="grid lg:grid-cols-12 gap-16">
+                <div class="lg:col-span-4">
+                    <h2 class="text-4xl font-bold mb-6">El Escenario Crítico</h2>
+                    <p class="text-gray-400">Diagnóstico de la infraestructura actual y los riesgos asociados a la inacción.</p>
+                </div>
+                <div class="lg:col-span-8 grid md:grid-cols-2 gap-8">
+                    <div class="p-8 glass-panel rounded-2xl">
+                        <h3 class="font-bold text-xl mb-4 text-cyan-400">Opacidad Técnica</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Sistemas <span class="code-snippet">Natural/Adabas</span> con millones de líneas de código sin documentación actualizada. La lógica de negocio está "enterrada" bajo alias crípticos y alias de base de datos.</p>
+                    </div>
+                    <div class="p-8 glass-panel rounded-2xl">
+                        <h3 class="font-bold text-xl mb-4 text-cyan-400">Riesgo de Soberanía</h3>
+                        <p class="text-gray-400 text-sm leading-relaxed">Dependencia absoluta de personal experto cercano al retiro. La pérdida de conocimiento institucional es el mayor riesgo operativo del próximo trienio.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 2: FRAMEWORK M.I.T.D. -->
+        <section id="metodologia" class="py-24">
+            <div class="mb-16">
+                <h2 class="text-4xl font-bold mb-4 text-center">Framework M.I.T.D.</h2>
+                <p class="text-gray-400 text-center max-w-2xl mx-auto">Modelo de Inferencia y Trazabilidad Determinística: Un enfoque híbrido para entornos de alta seguridad y regulación.</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Tarjeta Metodología 1 -->
+                <div class="p-10 glass-panel rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 opacity-10 group-hover:opacity-20 transition-opacity">
+                        <i class="fa-solid fa-code text-6xl"></i>
+                    </div>
+                    <span class="step-number text-5xl font-black mb-6 block">01</span>
+                    <h3 class="text-2xl font-bold mb-4">Extracción Directa</h3>
+                    <p class="text-gray-400 leading-relaxed">Se reconstruye la lógica desde el código fuente nativo. A diferencia de la IA generativa, este método es 100% auditable y determinístico (sin alucinaciones).</p>
+                </div>
+
+                <!-- Tarjeta Metodología 2 -->
+                <div class="p-10 glass-panel rounded-3xl relative overflow-hidden group bg-cyan-500/5 border-cyan-500/20">
+                    <span class="step-number text-5xl font-black mb-6 block">02</span>
+                    <h3 class="text-2xl font-bold mb-4">Seguridad On-Premise</h3>
+                    <p class="text-gray-400 leading-relaxed">Diseñado específicamente para banca, seguros y organismos estatales que no pueden exportar datos a agentes externos o nubes públicas por cumplimiento normativo.</p>
+                </div>
+
+                <!-- Tarjeta Metodología 3 -->
+                <div class="p-10 glass-panel rounded-3xl relative overflow-hidden group">
+                    <span class="step-number text-5xl font-black mb-6 block">03</span>
+                    <h3 class="text-2xl font-bold mb-4">Gemelo Digital</h3>
+                    <p class="text-gray-400 leading-relaxed">Creación de réplicas exactas del comportamiento del sistema para simular escenarios ideales vs. reales sin afectar la operación productiva.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN: CASO TESTIGO (NUEVA) -->
+        <section id="caso-testigo" class="py-24 border-t border-white/5 bg-gradient-to-b from-transparent to-cyan-500/[0.02]">
+            <div class="max-w-5xl mx-auto">
+                <h2 class="text-4xl font-bold mb-8 text-center">Caso Testigo: Organización de Gran Escala</h2>
+                <div class="p-8 md:p-12 glass-panel rounded-[2.5rem] border-cyan-500/20">
+                    <div class="grid md:grid-cols-2 gap-12">
+                        <div>
+                            <h3 class="text-cyan-400 font-bold text-2xl mb-6">Métricas de Dimensionamiento</h3>
+                            <ul class="space-y-6">
+                                <li class="flex items-start gap-4">
+                                    <div class="w-6 h-6 rounded-full bg-cyan-500/20 flex-shrink-0 flex items-center justify-center text-cyan-400 mt-1">✓</div>
+                                    <div>
+                                        <p class="font-bold text-lg">4.5 Millones de líneas</p>
+                                        <p class="text-sm text-gray-400">Volumen total de programación en ecosistema Natural/Adabas.</p>
+                                    </div>
+                                </li>
+                                <li class="flex items-start gap-4">
+                                    <div class="w-6 h-6 rounded-full bg-cyan-500/20 flex-shrink-0 flex items-center justify-center text-cyan-400 mt-1">✓</div>
+                                    <div>
+                                        <p class="font-bold text-lg">3 Meses de ejecución</p>
+                                        <p class="text-sm text-gray-400">Tiempo promedio para el relevamiento completo y modelado de lógica.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-black/40 p-8 rounded-3xl border border-white/5">
+                            <h3 class="text-white font-bold text-xl mb-4">Asignación de Recursos</h3>
+                            <div class="space-y-4 text-sm">
+                                <div class="flex justify-between border-b border-white/5 pb-2">
+                                    <span class="text-gray-400">Experto M.I.T.D. Software</span>
+                                    <span class="text-cyan-400 font-bold">Tiempo Completo (3m)</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/5 pb-2">
+                                    <span class="text-gray-400">Experto Core Legacy (Fase Inicial)</span>
+                                    <span class="text-cyan-400 font-bold">10 Días</span>
+                                </div>
+                                <div class="flex justify-between border-b border-white/5 pb-2">
+                                    <span class="text-gray-400">Experto Core Legacy (Persistencia)</span>
+                                    <span class="text-cyan-400 font-bold">10 Días</span>
+                                </div>
+                            </div>
+                            <p class="mt-6 text-xs text-gray-500 leading-relaxed">
+                                * La persistencia implica la transferencia de estructuras de datos y lógica de negocio a una base de datos relacional moderna.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 3: HOJA DE RUTA Y ESCALABILIDAD -->
+        <section id="escalabilidad" class="py-24 border-t border-white/5">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold mb-12 text-center">Hoja de Ruta de Escalabilidad</h2>
+                <div class="relative">
+                    <!-- Línea de tiempo -->
+                    <div class="absolute left-0 md:left-1/2 top-0 h-full w-[2px] bg-white/10 -translate-x-1/2 hidden md:block"></div>
+                    
+                    <!-- Fase 1 -->
+                    <div class="relative mb-16 md:mb-24 flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+                            <h3 class="text-cyan-400 font-bold text-2xl">Fase 1: Núcleo Crítico</h3>
+                            <p class="text-gray-400 mt-2">Inicio estratégico centrado en entornos <span class="code-snippet">Natural/Adabas</span>. Recuperación de la lógica de negocio y mapeo de bases de datos de alta transaccionalidad.</p>
+                        </div>
+                        <div class="roadmap-dot hidden md:block"></div>
+                        <div class="flex-1 md:pl-12">
+                            <span class="px-3 py-1 rounded bg-cyan-500/20 text-cyan-400 text-xs font-mono uppercase">Estado: Ejecución</span>
+                        </div>
+                    </div>
+
+                    <!-- Fase 2 -->
+                    <div class="relative mb-16 md:mb-24 flex flex-col md:flex-row-reverse items-center">
+                        <div class="flex-1 md:text-left md:pl-12 mb-4 md:mb-0">
+                            <h3 class="text-white font-bold text-2xl">Fase 2: Expansión COBOL</h3>
+                            <p class="text-gray-400 mt-2">En los próximos meses, la metodología M.I.T.D. se extenderá al ecosistema <span class="code-snippet">COBOL</span>, abordando la capa de procesamiento por lotes (Batch) y transaccional masivo.</p>
+                        </div>
+                        <div class="roadmap-dot hidden md:block"></div>
+                        <div class="flex-1 md:pr-12 md:text-right">
+                            <span class="px-3 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono uppercase">Próximo Hito</span>
+                        </div>
+                    </div>
+
+                    <!-- Fase 3 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:text-right md:pr-12 mb-4 md:mb-0">
+                            <h3 class="text-white/60 font-bold text-2xl">Fase 3: Legacy Global</h3>
+                            <p class="text-gray-400 mt-2">Cobertura total sobre el resto de tecnologías heredadas con mayor presencia mundial, unificando la gobernanza bajo un único modelo de trazabilidad auditable.</p>
+                        </div>
+                        <div class="roadmap-dot hidden md:block bg-gray-700"></div>
+                        <div class="flex-1 md:pl-12">
+                            <span class="px-3 py-1 rounded bg-white/5 text-gray-500 text-xs font-mono uppercase">Escalado Final</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 4: PILARES ESTRATÉGICOS -->
+        <section id="pilares" class="py-24 border-y border-white/5">
+            <h2 class="text-4xl font-bold mb-16">Estrategia de Implementación</h2>
+            <div class="space-y-6">
+                <!-- Fila 1 -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-8 glass-panel rounded-2xl flex gap-6 items-start">
+                        <div class="p-4 rounded-xl bg-cyan-500/10 text-cyan-400">
+                            <i class="fa-solid fa-bolt text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2">Agilidad en Sistemas Legacy</h4>
+                            <p class="text-gray-400 text-sm">Implementación de metodologías ágiles (sprints/scrum) sobre el mainframe. La documentación automatizada elimina el miedo al cambio.</p>
+                        </div>
+                    </div>
+                    <div class="p-8 glass-panel rounded-2xl flex gap-6 items-start">
+                        <div class="p-4 rounded-xl bg-cyan-500/10 text-cyan-400">
+                            <i class="fa-solid fa-graduation-cap text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2">Escuela de Talento Junior</h4>
+                            <p class="text-gray-400 text-sm">Transferencia de conocimiento asistida. Los perfiles Junior pueden mantener sistemas antiguos gracias al mapa de trazabilidad del M.I.T.D.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Fila 2 -->
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="p-8 glass-panel rounded-2xl flex gap-6 items-start">
+                        <div class="p-4 rounded-xl bg-cyan-500/10 text-cyan-400">
+                            <i class="fa-solid fa-link text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2">Convivencia Tecnológica</h4>
+                            <p class="text-gray-400 text-sm">Exposición de servicios legados mediante APIs modernas. Reducción drástica de la fricción entre el Mainframe y el Front-end.</p>
+                        </div>
+                    </div>
+                    <div class="p-8 glass-panel rounded-2xl flex gap-6 items-start border-cyan-500/30 bg-cyan-500/5">
+                        <div class="p-4 rounded-xl bg-cyan-500 text-black">
+                            <i class="fa-solid fa-rocket text-2xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-xl mb-2">Migrabilidad Garantizada</h4>
+                            <p class="text-gray-400 text-sm">La meta no es perpetuar lo antiguo, sino documentarlo tan bien que el salto tecnológico final sea trivial, seguro y de bajo costo.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCIÓN 5: RESULTADOS Y MÉTRICAS -->
+        <section id="resultados" class="py-24">
+            <h2 class="text-4xl font-bold mb-16 text-center">Proyección de Impacto Ejecutivo</h2>
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="p-6 stat-card">
+                    <span class="text-sm text-gray-500 block mb-2">OPERACIÓN TI</span>
+                    <div class="text-5xl font-extrabold text-cyan-400 mb-2">-50%</div>
+                    <p class="text-xs text-gray-400">Reducción de Tiempos y Costos base</p>
+                </div>
+                <div class="p-6 stat-card">
+                    <span class="text-sm text-gray-500 block mb-2">IDENTIFICACIÓN</span>
+                    <div class="text-5xl font-extrabold text-cyan-400 mb-2">-30%</div>
+                    <p class="text-xs text-gray-400">Falsos Positivos en procesos críticos</p>
+                </div>
+                <div class="p-6 stat-card">
+                    <span class="text-sm text-gray-500 block mb-2">COSTO DE ANÁLISIS</span>
+                    <div class="text-5xl font-extrabold text-cyan-400 mb-2">-80%</div>
+                    <p class="text-xs text-gray-400">Vs relevamientos manuales tradicionales</p>
+                </div>
+                <div class="p-6 stat-card">
+                    <span class="text-sm text-gray-500 block mb-2">TIEMPO EJECUCIÓN</span>
+                    <div class="text-5xl font-extrabold text-cyan-400 mb-2">-85%</div>
+                    <p class="text-xs text-gray-400">En recuperación de lógica de negocio</p>
+                </div>
+            </div>
+
+            <!-- Gráfico Comparativo de Relevamiento -->
+            <div class="mt-20 p-10 glass-panel rounded-3xl">
+                <h3 class="text-2xl font-bold mb-8">Eficiencia del Relevamiento: Manual vs. M.I.T.D.</h3>
+                <div class="space-y-8">
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span>Método Tradicional (Semanas/Meses)</span>
+                            <span class="text-gray-500">100% Esfuerzo</span>
+                        </div>
+                        <div class="h-8 w-full bg-white/5 rounded-lg overflow-hidden">
+                            <div class="h-full bg-slate-700 w-full"></div>
+                        </div>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-sm mb-1">
+                            <span>Framework M.I.T.D. (Días)</span>
+                            <span class="text-cyan-400">15% Esfuerzo</span>
+                        </div>
+                        <div class="h-8 w-full bg-white/5 rounded-lg overflow-hidden">
+                            <div class="h-full bg-cyan-500 w-[15%]"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONCLUSIÓN -->
+        <section class="py-24 text-center">
+            <div class="max-w-3xl mx-auto">
+                <h2 class="text-5xl font-bold mb-8 leading-tight">Dominar el pasado para <br> <span class="text-cyan-400">financiar el futuro.</span></h2>
+                <p class="text-gray-400 mb-12">La soberanía tecnológica no es una opción, es la base de la supervivencia institucional en la era de la transformación digital acelerada.</p>              
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 border-t border-white/5 text-center text-gray-500 text-sm">
+        <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="flex items-center gap-2">
+                <div class="w-6 h-6 bg-white/10 rounded flex items-center justify-center">
+                    <span class="text-[10px] text-white">IT</span>
+                </div>
+                <span> MITD-Software - Dirección de Innovación y Estrategia - Gracias a todos por su interés</span>
+            </div>
+            <p>© 2026. Documento Confidencial para Uso Ejecutivo.</p>
+        </div>
+    </footer>
+
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</body>
+</html>
